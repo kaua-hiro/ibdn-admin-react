@@ -1,0 +1,65 @@
+.membros-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.table-container {
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--secondary-text);
+}
+
+th {
+  color: var(--primary-text);
+  font-size: 0.9rem;
+}
+
+/* AQUI ESTÁ A CORREÇÃO DOS STATUS */
+.status {
+  padding: 4px 10px;
+  border-radius: 9999px; /* Pílula */
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.status-ativo {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+}
+.status-inativo {
+  background-color: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+.actions .icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-text);
+  font-size: 1.2rem;
+  margin: 0 5px;
+  transition: color 0.2s ease;
+}
+.actions .icon-btn:hover {
+  color: var(--primary-accent);
+}
+.actions .icon-btn-danger:hover {
+  color: var(--danger-text);
+}

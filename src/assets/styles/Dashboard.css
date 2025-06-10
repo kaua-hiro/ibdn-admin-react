@@ -1,0 +1,93 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.period-filter {
+  display: flex;
+  background-color: var(--tertiary-bg);
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
+
+.period-filter button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--secondary-text);
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.period-filter button.active {
+  background-color: var(--secondary-bg);
+  color: var(--primary-text);
+  box-shadow: var(--shadow-sm);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stats-card {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-icon {
+  background-color: var(--tertiary-bg);
+  color: var(--primary-text);
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content { flex-grow: 1; }
+.card-title {
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+.card-value {
+  color: var(--primary-text);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+.card-change {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.card-change.positive { color: var(--success-text); }
+.card-change.negative { color: var(--danger-text); }
+
+.chart-container {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+.chart-container h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: var(--primary-text);
+}

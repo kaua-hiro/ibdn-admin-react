@@ -1,0 +1,37 @@
+/* Tema Claro (Padrão) */
+:root {
+  --primary-bg: #f5f7fa;
+  --secondary-bg: #ffffff;
+  --tertiary-bg: #f5f7fa;
+  --border-color: #e0e0e0;
+  --primary-text: #1e3a5f;
+  --secondary-text: #6b7280;
+  --primary-accent: #1e3a5f;
+  --secondary-accent: #fbb900;
+  --text-on-accent: #ffffff;
+  --success-bg: #d4edda;
+  --success-text: #155724;
+  --danger-bg: #f8d7da;
+  --danger-text: #721c24;
+  --font-family: 'Montserrat', sans-serif;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --border-radius: 8px;
+}
+
+/* TEMA DARK */
+.dark {
+  --primary-bg: #0F172A;
+  --secondary-bg: #1E293B;
+  --tertiary-bg: #334155;
+  --border-color: #334155;
+  --primary-text: #F1F5F9;
+  --secondary-text: #94A3B8;
+  --primary-accent: #38BDF8;
+  --secondary-accent: #fbb900;
+  --text-on-accent: #0F172A;
+  --success-bg: rgba(46, 125, 50, 0.2);
+  --success-text: #66bb6a;
+  --danger-bg: rgba(198, 40, 40, 0.2);
+  --danger-text: #ef5350;
+}

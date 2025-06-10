@@ -1,0 +1,32 @@
+/* Importa as variáveis de cor para serem usadas aqui */
+@import './variables.css';
+
+/* Estilos globais para a aplicação */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  /* AQUI ESTÁ A MUDANÇA PRINCIPAL: Usa a variável de fundo */
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout principal com Flexbox */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  /* Garante que o fundo desta área também use a variável */
+  background-color: var(--primary-bg);
+}
+
+.content-area {
+  padding: 2rem;
+  flex-grow: 1;
+}
