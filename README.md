@@ -8,6 +8,7 @@ Um painel de administração moderno e reativo, construído com React, para gere
 
 - **Dashboard Dinâmico**: Apresenta cartões de estatísticas (Novos Membros, Eventos, etc.) e gráfico interativo com filtros por período (7 dias, 30 dias, 1 ano)
 - **Gerenciamento de Membros (CRUD Completo)**: Sistema completo para Criar, Ler, Atualizar e Excluir membros da igreja com formulários e tabela de visualização
+- **Filtro e Busca em Tempo Real**: Um campo de busca na página de membros que filtra a tabela instantaneamente conforme o usuário digita
 - **Página de Configurações Avançadas**: Layout em grid para alterar informações de perfil, senha e conectar contas de redes sociais
 - **Sistema de Temas (Theming)**: Suporte completo a tema Claro e Escuro com transições suaves utilizando Variáveis CSS
 - **Componentização Eficiente**: Arquitetura baseada em componentes React reutilizáveis como `StatsCard` e formulários modulares
@@ -83,6 +84,7 @@ src/
 
 ## 🎯 Próximos Passos
 
+- [x] Filtro de Busca em Tempo Real na tabela de membros
 - [ ] Integração com API real
 - [ ] Sistema de autenticação
 - [ ] Testes unitários
