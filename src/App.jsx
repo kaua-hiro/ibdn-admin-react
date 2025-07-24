@@ -1,37 +1,51 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
-import Sidebar from './components/layout/Sidebar';
-import Header from './components/layout/Header';
+// Contexto de Autenticação
+import { AuthProvider } from './context/AuthContext';
+
+// Componentes
+import ProtectedRoute from './components/auth/ProtectedRoute';
+import Layout from './components/layout/Layout';
+
+// Páginas
+import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Membros from './pages/Membros';
 import Configuracoes from './pages/Configuracoes';
 
-// Verifique se os caminhos destes arquivos CSS estão corretos
-// de acordo com a sua estrutura de pastas.
+// Estilos
 import './assets/styles/variables.css';
 import './assets/styles/App.css';
 
 function App() {
   return (
+    // A MUDANÇA ESTÁ AQUI: O <Router> agora envolve o <AuthProvider>
     <Router>
-      {/* A CORREÇÃO ESTÁ AQUI: 
-        className é um atributo que recebe uma string de texto.
-        As duas classes "app-container" e "dark" ficam dentro das mesmas aspas.
-      */}
-      <div className="app-container dark">
-        <Sidebar />
-        <div className="main-content">
-          <Header />
-          <main className="content-area">
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/membros" element={<Membros />} />
-              <Route path="/configuracoes" element={<Configuracoes />} />
-            </Routes>
-          </main>
-        </div>
-      </div>
+      <AuthProvider>
+        <Routes>
+          {/* Rota pública para o Login */}
+          <Route path="/login" element={<Login />} />
+
+          {/* Rota "pai" que é protegida e renderiza o Layout principal */}
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Layout />
+              </ProtectedRoute>
+            }
+          >
+            {/* Rotas "filhas" que aparecem dentro do Outlet do Layout */}
+            <Route index element={<Dashboard />} />
+            <Route path="membros" element={<Membros />} />
+            <Route path="configuracoes" element={<Configuracoes />} />
+          </Route>
+
+          {/* Rota para qualquer outro caminho não encontrado, redireciona para a home */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </AuthProvider>
     </Router>
   );
 }

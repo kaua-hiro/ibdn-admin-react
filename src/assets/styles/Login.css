@@ -1,0 +1,70 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+}
+
+.login-box {
+  background-color: var(--secondary-bg);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.login-logo {
+  color: var(--secondary-accent);
+  margin: 0;
+  font-size: 2rem;
+}
+
+.login-box h2 {
+  color: var(--primary-text);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--tertiary-bg);
+  color: var(--primary-text);
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: var(--primary-accent);
+  color: var(--text-on-accent);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}

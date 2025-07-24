@@ -25,3 +25,21 @@
     font-size: 1.2rem;
     color: var(--primary-text); /* Usa a cor de texto primária (branco) */
 }
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--secondary-text);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+}
+.btn-logout:hover {
+  background-color: var(--tertiary-bg);
+  color: var(--primary-text);
+}
