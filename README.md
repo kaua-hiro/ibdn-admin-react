@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Painel Administrativo IBDN (IBDN Admin Dashboard)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um painel de administração moderno e reativo, construído com React, para gerenciar os dados internos da Igreja Batista do Novo Dia (IBDN). A interface é inspirada em designs profissionais como o Flowbite e oferece uma experiência de usuário limpa e eficiente.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Funcionalidades Principais
 
-### `npm start`
+- **Dashboard Dinâmico**: Apresenta cartões de estatísticas (Novos Membros, Eventos, etc.) e gráfico interativo com filtros por período (7 dias, 30 dias, 1 ano)
+- **Gerenciamento de Membros (CRUD Completo)**: Sistema completo para Criar, Ler, Atualizar e Excluir membros da igreja com formulários e tabela de visualização
+- **Página de Configurações Avançadas**: Layout em grid para alterar informações de perfil, senha e conectar contas de redes sociais
+- **Sistema de Temas (Theming)**: Suporte completo a tema Claro e Escuro com transições suaves utilizando Variáveis CSS
+- **Componentização Eficiente**: Arquitetura baseada em componentes React reutilizáveis como `StatsCard` e formulários modulares
+- **Interface Responsiva**: Design adaptável para diferentes tamanhos de tela
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+- **⚛️ React.js** - Biblioteca principal para construção da interface
+- **🛣️ React Router DOM** - Gerenciamento de rotas da aplicação
+- **🎨 CSS Puro** - Estilização com CSS Grid, Flexbox e Variáveis CSS
+- **📊 Recharts** - Biblioteca para gráficos interativos
+- **🎯 React Icons** - Conjunto completo de ícones
+- **📦 Mock Data** - Dados simulados prontos para integração com API real
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Começando
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Certifique-se de ter instalado em sua máquina:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (versão 14 ou superior)
+- **npm** ou **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalação
 
-### `npm run eject`
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/kaua-hiro/ibdn-admin-react
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navegue até o diretório do projeto**
+   ```bash
+   cd ibdn-admin-react
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Acesse a aplicação**
+   
+   Abra seu navegador e acesse: `http://localhost:3000`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Estrutura de Pastas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── StatsCard.js    # Cartão de estatísticas
+│   └── ...             # Outros componentes
+├── pages/              # Páginas da aplicação
+│   ├── Dashboard.js    # Página principal do dashboard
+│   ├── Members.js      # Gerenciamento de membros
+│   └── Settings.js     # Página de configurações
+├── data/               # Dados mockados
+│   └── mockData.js     # Arquivo com dados simulados
+├── styles/             # Arquivos de estilização
+│   └── *.css          # Arquivos CSS organizados por componente
+└── App.js             # Componente principal da aplicação
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎯 Próximos Passos
 
-### Analyzing the Bundle Size
+- [ ] Integração com API real
+- [ ] Sistema de autenticação
+- [ ] Testes unitários
+- [ ] Deploy automático
+- [ ] Notificações em tempo real
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contribuindo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto, sinta-se à vontade para:
 
-### Advanced Configuration
+1. **Fork** o projeto
+2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um **Pull Request**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Reportando Bugs
 
-### Deployment
+Encontrou um bug? Abra uma [issue](../../issues) descrevendo:
+- Como reproduzir o problema
+- Comportamento esperado vs comportamento atual
+- Screenshots (se aplicável)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📄 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+<div align="center">
+  <p>Feito com ❤️ </p>
+  <p>
+    <a href="#painel-administrativo-ibdn-ibdn-admin-dashboard">⬆️ Voltar ao topo</a>
+  </p>
+</div>
