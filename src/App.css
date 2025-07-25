@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: var(--font-family);
-  background-color: var(--ibdn-background);
-  color: var(--ibdn-text-primary);
+  background-color: var(--nexus-background);
+  color: var(--nexus-text-primary);
 }
 
 .app-container {

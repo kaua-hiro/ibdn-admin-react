@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1 className="sidebar-logo">IBDN Admin</h1>
+        <h1 className="sidebar-logo">Nexus</h1>
       </div>
       <nav className="sidebar-nav">
         <NavLink to="/" className="sidebar-link">
@@ -30,6 +30,6 @@ const Sidebar = () => {
 // Crie o CSS em 'src/components/layout/Sidebar.css'
 /*
 .sidebar { ... }
-.sidebar-link.active { background-color: var(--ibdn-primary); color: var(--ibdn-white); }
+.sidebar-link.active { background-color: var(--nexus-primary); color: var(--nexus-white); }
 */
 export default Sidebar;

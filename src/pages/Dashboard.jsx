@@ -36,27 +36,27 @@ const Dashboard = () => {
       <div className="stats-grid">
         <StatsCard 
           icon={<FiUsers />}
-          title="Novos Membros"
-          value={stats.newMembers?.value}
-          change={stats.newMembers?.change}
+        title="Novos Usuários"
+        value={stats.newUsers?.value}
+        change={stats.newUsers?.change}
         />
         <StatsCard 
-          icon={<FiCalendar />}
-          title="Eventos Realizados"
-          value={stats.events?.value}
-          change={stats.events?.change}
+         icon={<FiCalendar />}
+         title="Tarefas Concluídas"
+        value={stats.tasksCompleted?.value}
+        change={stats.tasksCompleted?.change}
         />
         <StatsCard 
           icon={<FiHeart />}
-          title="Células Ativas"
-          value={stats.activeCells?.value}
-          change={stats.activeCells?.change}
+        title="Projetos Ativos"
+        value={stats.activeProjects?.value}
+        change={stats.activeProjects?.change}
         />
         <StatsCard 
           icon={<FiDollarSign />}
-          title="Ofertas (Total)"
-          value={stats.offerings?.value}
-          change={stats.offerings?.change}
+        title="Receita (Período)"
+        value={stats.revenue?.value}
+        change={stats.revenue?.change}
         />
       </div>
 

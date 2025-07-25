@@ -1,6 +1,6 @@
-# Painel Administrativo IBDN (IBDN Admin Dashboard)
+# Painel Administrativo nexus (nexus Admin Dashboard)
 
-Um painel de administração moderno e reativo, construído com React, para gerenciar os dados internos da Igreja Batista do Novo Dia (IBDN). A interface é inspirada em designs profissionais como o Flowbite e oferece uma experiência de usuário limpa e eficiente.
+Um painel de administração moderno e reativo, construído com React, para gerenciar os dados internos da Igreja Batista do Novo Dia (nexus). A interface é inspirada em designs profissionais como o Flowbite e oferece uma experiência de usuário limpa e eficiente.
 
 ---
 
@@ -36,27 +36,31 @@ Certifique-se de ter instalado em sua máquina:
 ### Instalação
 
 1. **Clone o repositório**
+
    ```bash
-   git clone https://github.com/kaua-hiro/ibdn-admin-react
+   git clone https://github.com/kaua-hiro/nexus-admin-react
    ```
 
 2. **Navegue até o diretório do projeto**
+
    ```bash
-   cd ibdn-admin-react
+   cd nexus-admin-react
    ```
 
 3. **Instale as dependências**
+
    ```bash
    npm install
    ```
 
 4. **Inicie o servidor de desenvolvimento**
+
    ```bash
    npm start
    ```
 
 5. **Acesse a aplicação**
-   
+
    Abra seu navegador e acesse: `http://localhost:3000`
 
 ---
@@ -104,6 +108,7 @@ Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melho
 ### Reportando Bugs
 
 Encontrou um bug? Abra uma [issue](../../issues) descrevendo:
+
 - Como reproduzir o problema
 - Comportamento esperado vs comportamento atual
 - Screenshots (se aplicável)
@@ -119,6 +124,6 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 <div align="center">
   <p>Feito com ❤️ </p>
   <p>
-    <a href="#painel-administrativo-ibdn-ibdn-admin-dashboard">⬆️ Voltar ao topo</a>
+    <a href="#painel-administrativo-nexus-nexus-admin-dashboard">⬆️ Voltar ao topo</a>
   </p>
 </div>

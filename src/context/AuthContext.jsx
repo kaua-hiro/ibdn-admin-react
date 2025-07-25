@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (data) => {
     try {
-      const mockUser = { name: data.username, email: `${data.username}@ibdn.org.br` };
+      const mockUser = { name: data.username, email: `${data.username}@nexuscorp.com` };
       const userString = JSON.stringify(mockUser);
       await localStorage.setItem('user', userString);
       setUser(mockUser);

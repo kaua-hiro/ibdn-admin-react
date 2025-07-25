@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaGithub, FaDribbble } from 'react-icons/fa';
+// 1. O ícone 'FaDribbble' foi REMOVIDO da linha abaixo, pois não estava sendo usado.
+import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const SocialAccounts = () => {
     return (
@@ -12,7 +13,8 @@ const SocialAccounts = () => {
                     <FaFacebook size={24} color="#1877F2" />
                     <div>
                         <h4>Conta do Facebook</h4>
-                        <a href="#">www.facebook.com/ibdn</a>
+                        {/* 2. O href="#" foi TROCADO por um link real para ser válido. */}
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com/nexus</a>
                     </div>
                     <button className="btn btn-secondary">Desconectar</button>
                 </div>
@@ -37,4 +39,4 @@ const SocialAccounts = () => {
     )
 }
 
-export default SocialAccounts
+export default SocialAccounts;

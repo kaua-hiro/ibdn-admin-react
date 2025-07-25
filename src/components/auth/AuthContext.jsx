@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
 
   // As funções de login e logout agora são simples.
   const login = (data) => {
-    const mockUser = { name: data.username, email: `${data.username}@ibdn.org.br` };
+    const mockUser = { name: data.username, email: `${data.username}@nexus.org.br` };
     localStorage.setItem('user', JSON.stringify(mockUser));
     setUser(mockUser);
     // O redirecionamento será feito na página de Login, não mais aqui.

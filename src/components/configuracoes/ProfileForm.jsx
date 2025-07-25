@@ -22,7 +22,7 @@ const ProfileForm = () => {
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" defaultValue="exemplo@ibdn.org.br" />
+            <input type="email" id="email" defaultValue="exemplo@nexus.org.br" />
           </div>
           <div className="form-group">
             <label htmlFor="phone">Telefone</label>
